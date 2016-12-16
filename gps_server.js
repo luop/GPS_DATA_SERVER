@@ -129,8 +129,10 @@ server.on('json_connection',function(jsocket) {
             stmt.finalize();
             login = true;
           }
-          if( !(server.data.hasOwnProperty('username')) && login ){
-            server.data[object.username] = {};
+          if( login ){
+            if ( !(server.data.hasOwnProperty('username'))){
+              server.data[object.username] = {};
+            }
             jsocket.jwrite({ result: "Logged in"});
           }else{
             jsocket.error({ result: "Invalid user name or password"});

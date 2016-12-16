@@ -9,9 +9,9 @@ function send(counter) {
 
     if ( counter == 0 ) {
       client.jwrite({ command: "login", username: process.argv[4], password: process.argv[5] }, send(++counter));
-    }else if ( counter == 4) {
+    }else if ( counter == 9) {
       client.jwrite({ command: "end"});
-    }else if ( counter == 3){
+    }else if ( counter == 8){
       client.jwrite({ command: "get", username: process.argv[4] },send(++counter));
     }else{
       let result = api.createCommand()
@@ -45,5 +45,5 @@ if ( process.argv.length == 6 ){
   let port = process.argv[3];
   client.connect(port, hostname);
 }else{
-  console.log("Usage: node save_gps.js hostname port")
+  console.log("Usage: node save_gps.js hostname port username password")
 }

@@ -74,7 +74,7 @@ The Server returns a JSON error if the user is not logged in. If the user is log
 
 ## Test Results
 
-As the [localhost_test1 screenshot](https://drive.google.com/file/d/0ByTKQVoHmW0xNDhSUDlJR2k0MzA/view?usp=sharing) and [localhost_test2 screenshot](https://drive.google.com/file/d/0ByTKQVoHmW0xWmhya1JjVUtlZzQ/view?usp=sharing) shows, the client connected to the server successfully. The client was also able to log in, send GPS data, get the data, and close the connection. The next test plan will be running the server on AWS. Then, I will take my phone to different places and see if the client is able to send GPS data to server successfully.
+I provided four links to four different screenshots, [starting the client](https://drive.google.com/file/d/0ByTKQVoHmW0xOEhnSDlEUzRueFk/view?usp=sharing), [uploading the data](https://drive.google.com/file/d/0ByTKQVoHmW0xRkZUdngyWk4xZ2c/view?usp=sharing), [getting the data](https://drive.google.com/file/d/0ByTKQVoHmW0xZkxvaWhObng4QVk/view?usp=sharing), and [responses from the server](https://drive.google.com/file/d/0ByTKQVoHmW0xM3paMlNha0U3c2M/view?usp=sharing). They showed the client connected to the server successfully. On the server side, the server was able to receive the command, acted accordingly, and responded back. On the other hand, the client was also able to log in, send GPS data, get the data, and close the connection. The next test plan will be running the server on AWS. Then, I will take my phone to different places and see if the client will be able to send GPS data to the server successfully.
 
 
 ## Future extensions
